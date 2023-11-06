@@ -5,6 +5,7 @@
     <title>ثبت نام</title>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script type="text/javascript" src="CSS/main.js"></script>
 </head>
 <body class="register_body">
 <section class="register  clearfix">
@@ -26,13 +27,18 @@
 
         <form>
             <div class="input_group">
-                <input class="contact_input" type="text" placeholder="نام" name="name">
+                <input class="contact_input" type="text" placeholder="نام" name="name" id="name">
                 <input class="contact_input" type="text" placeholder="نام کاربری" name="user_name">
                 <input class="contact_input" type="email" placeholder="ایمیل" name="email">
                 <input class="contact_input" type="password" placeholder="رمز عبور" name="pass">
                 <input class="contact_input" type="password" placeholder="تکرار رمز" name="re_pass">
             </div>
-            <button class="btn btn_submit" type="submit"> ثبت نام</button>
+            <script type="text/javascript">
+                function register_ok() {
+                    window.alert(" ثبت نام شما با موفقیت انجام شد");
+                }
+            </script>
+            <button class="btn btn_submit" type="submit" onclick="register_ok()"> ثبت نام</button>
         </form>
 
     </article>
