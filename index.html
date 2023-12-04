@@ -5,31 +5,39 @@
     <title>راه رو</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="CSS/main.js"></script>
+
 </head>
 <body>
 <!--header start-->
 <header class="header">
-    <div class="menu">
+    <div class="menu " id="menu_text">
         <ul>
             <li><a class="menu_item" href="index.html">خانه</a></li>
             <li><a class="menu_item" href="#course">آموزش</a></li>
             <li><a class="menu_item" href="register.html">ثبت نام</a></li>
         </ul>
     </div>
+<!--    dark mode switch    -->
+    <label class="switch">
+        <input type="checkbox" id="checkbox" onclick="toggle()">
+        <span class="slider"></span>
+    </label>
+    <!--    dark mode switch    -->
     <div class="banner">
         <h2>راه رو</h2>
-        <h3>راه رو آکادمی آموزش زبان های برنامه نویسی است که با آموزش های مفید راه را برای شما هموار می کند و بهترین
+        <h3 id="text">راه رو آکادمی آموزش زبان های برنامه نویسی است که با آموزش های مفید راه را برای شما هموار می کند و بهترین
             منابع آموزشی را در اختیار شما قرار می دهد تا بتوانید مسیر آموزش برنامه نویسی را طی کنید و در این راه موفق
             باشید</h3>
-        <a class="btn btn_banner" href="#">شروع آموزش</a>
+        <a class="btn btn_banner" id="btn_banner" href="#">شروع آموزش</a>
     </div>
 </header>
 <div class="divider"></div>
 <!--header end-->
 
 <!-- recommended course start -->
-<div class="course_title" id="course">دوره های پیشنهادی</div>
-<section class="courses clearfix">
+<div class="course_title" id="courses_mode">دوره های پیشنهادی</div>
+<section class="courses clearfix" id="courses">
     <a href="https://www.w3schools.com/html/html_intro.asp">
         <article class="course clearfix">
             <span class="course_icon"><i class="bi bi-filetype-html"></i></span>
@@ -94,7 +102,7 @@
 <!--intrduction teacher end-->
 
 <!-- contact us start-->
-<section class="contact_us clearfix">
+<section class="contact_us clearfix" id="contact_us">
     <div class="contact clearfix">
         <article class="contact_info">
             <div class="contact_item">
@@ -131,7 +139,7 @@
 
         </article>
 
-        <article class="contact_form">
+        <article class="contact_form" id="contact_form">
             <h3>تماس با ما</h3>
 
 
@@ -151,7 +159,7 @@
 
 <!-- contact us end-->
 <!-- footer start-->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer_div">
         <div class="social_icons">
             <a class="social_icon" href="#"> <i class="bi bi-whatsapp"></i></a>

@@ -54,7 +54,7 @@ header start:
     float: right;
     list-style: none;
     margin-top: 2rem;
-margin-right: 1.5rem;
+    margin-right: 1.5rem;
 
 }
 
@@ -95,6 +95,64 @@ padding: 0.75rem;
     outline-offset: 0.25rem;
 
 }
+/* dark mode switch*/
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.switch {
+    margin: 3rem;
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #334905;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgba(138, 138, 138, 0.6);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
 
 /*  divider  */
 .divider {
@@ -133,9 +191,11 @@ recommebded course start:
     float: right;
     width: 25%;
     text-align: center;
+
+}
+.courses{
     background: var(--clr-back2);
 }
-
 .course:hover {
     box-shadow: 0 2px 0 var(--clr-button);
 }
@@ -206,7 +266,7 @@ intrduction teacher start
     padding: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    border: solid 2px white;
+    /*border: solid 2px white;*/
     text-align: center;
 }
 
@@ -260,7 +320,7 @@ contact us start
 }
 
 .contact_text {
-    color: var(--clr-primary);
+    color: var(--clr-leam);
     font-size: 0.87rem;
 }
 
@@ -369,8 +429,10 @@ body {
     background-color: var(--clr-white);
     text-align: right;
     font-size: 1rem;
-    color: var(--clr-primary);
+    color: var(--clr-primary-dark);
 }
+
+
 
 a {
     text-decoration: none;
