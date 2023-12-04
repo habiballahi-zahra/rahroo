@@ -11,27 +11,33 @@
 <section class="register  clearfix">
     <div class="menu">
         <ul>
-            <li><a class="menu_item" href="index.html">خانه</a></li>
-            <li><a class="menu_item" href="index.html#course">آموزش</a></li>
+            <li><a class="menu_item" href="index.php">خانه</a></li>
+            <li><a class="menu_item" href="index.php#course">آموزش</a></li>
             <li><a class="menu_item" href="register.html">ثبت نام</a></li>
         </ul>
     </div>
 </section>
+<?php  include_once 'form_validation.php';?>
 
-
-<div class="register_form111">
+<div>
 
     <article class="register_form">
         <h3>ثبت نام</h3>
 
 
-        <form>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="input_group">
-                <input class="contact_input" type="text" placeholder="نام" name="name" id="name">
-                <input class="contact_input" type="text" placeholder="نام کاربری" name="user_name">
-                <input class="contact_input" type="email" placeholder="ایمیل" name="email">
+                <input class="contact_input" type="text" placeholder="نام" name="name" id="name" value="<?=$name ?>">
+                <input class="contact_input" type="text" placeholder="نام خانوادگی" name="lastname" id="lastname"  value="<?=$lastname ?>" >
+                <input class="contact_input" type="text" placeholder="نام کاربری" name="user_name"value="<?=$username ?>">
+                <span class="error">* <?php echo $usernameError;?></span>
                 <input class="contact_input" type="password" placeholder="رمز عبور" name="pass">
-                <input class="contact_input" type="password" placeholder="تکرار رمز" name="re_pass">
+                <span class="error">* <?php echo $passwordError;?></span>
+                <input class="contact_input" type="text" placeholder="شماره تماس" name="phone"value="<?=$phone ?>">
+                <span class="error">* <?php echo $phoneError;?></span>
+                <input class="contact_input" type="text" placeholder="ایمیل" name="email" value="<?=$email ?>">
+                <span class="error">* <?php echo $emailError;?></span>
+                <input class="contact_input" type="file" placeholder="عکس" name="pic">
             </div>
             <button class="btn btn_submit" type="submit" onclick="register_ok()"> ثبت نام</button>
         </form>

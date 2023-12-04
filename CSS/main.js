@@ -1,7 +1,7 @@
 
 // register popup
 function register_ok() {
-    window.alert(" ثبت نام شما با موفقیت انجام شد");
+    // window.alert(" ثبت نام شما با موفقیت انجام شد");
 }
 
 //     derk mode

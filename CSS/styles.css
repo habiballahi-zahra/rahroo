@@ -356,12 +356,15 @@ contact us start
 
 .input_group {
     margin: 1rem 2rem;
+
 }
 
 .contact_input {
-    display: block;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    display: inline-block;
+
+    width: 95%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 1rem 1rem;
     border: none;
     background: var(--clr-back);
@@ -488,11 +491,15 @@ register page
     max-width: 30rem;
     background: var(--clr-white);
     border-radius: var(--radius);
-    text-align: center;
+    /*text-align: center;*/
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .register_form h3{
     padding-top: 2rem;
     color: var(--clr-primary-dark);
     text-align: center;
+}
+.error{
+    color: red;
+    margin-bottom: 0.25rem;
 }
