@@ -13,20 +13,32 @@
 <header class="header">
     <div class="menu " id="menu_text">
         <ul>
-            <li><a class="menu_item" href="index.html">خانه</a></li>
+            <li><a class="menu_item" href="index.php">خانه</a></li>
             <li><a class="menu_item" href="#course">آموزش</a></li>
-            <li><a class="menu_item" href="register.html">ثبت نام</a></li>
-        </ul>
+            <li><a class="menu_item" href="register.php">ثبت نام</a></li>
+
     </div>
-<!--    dark mode switch    -->
-    <label class="switch">
-        <input type="checkbox" id="checkbox" onclick="toggle()">
-        <span class="slider"></span>
-    </label>
     <!--    dark mode switch    -->
+    <div class="left_manu">
+        <ul>
+            <li> <div class="clock"><?php date_default_timezone_set("asia/Tehran");  echo date("h:i:sa");?></div></li>
+            <li>    <label class="switch">
+                    <input type="checkbox" id="checkbox" onclick="toggle()">
+                    <span class="slider"></span>
+                </label>
+                <!--    dark mode switch    --></li>
+        </ul>
+        <!--  clock start  -->
+
+
+        <!-- clock end   -->
+
+
+    </div>
     <div class="banner">
         <h2>راه رو</h2>
-        <h3 id="text">راه رو آکادمی آموزش زبان های برنامه نویسی است که با آموزش های مفید راه را برای شما هموار می کند و بهترین
+        <h3 id="text">راه رو آکادمی آموزش زبان های برنامه نویسی است که با آموزش های مفید راه را برای شما هموار می کند و
+            بهترین
             منابع آموزشی را در اختیار شما قرار می دهد تا بتوانید مسیر آموزش برنامه نویسی را طی کنید و در این راه موفق
             باشید</h3>
         <a class="btn btn_banner" id="btn_banner" href="#">شروع آموزش</a>

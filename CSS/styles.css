@@ -69,6 +69,7 @@ padding: 0.75rem;
     border-radius: 2rem;
 
 }
+
 .banner {
     text-align: center;
     position: absolute;
@@ -95,6 +96,21 @@ padding: 0.75rem;
     outline-offset: 0.25rem;
 
 }
+
+.left_manu {
+
+    float: left;
+    padding: 0.75rem;
+    margin-left: 3rem;
+
+}
+.left_manu li{
+    list-style: none;
+}
+.clock{
+    display: inline-block;
+    color: var(--clr-primary-light);
+}
 /* dark mode switch*/
 body {
     display: flex;
@@ -104,8 +120,9 @@ body {
 }
 
 .switch {
-    margin: 3rem;
-    float: left;
+/*margin-top: 3rem;*/
+/*    margin-left: 3rem;*/
+/*    float: left;*/
     position: relative;
     display: inline-block;
     width: 60px;
