@@ -25,17 +25,17 @@
         <h3>ثبت نام</h3>
 
 
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
             <div class="input_group">
-                <input class="contact_input" type="text" placeholder="نام" name="name" id="name" value="<?=$name ?>">
-                <input class="contact_input" type="text" placeholder="نام خانوادگی" name="lastname" id="lastname"  value="<?=$lastname ?>" >
-                <input class="contact_input" type="text" placeholder="نام کاربری" name="user_name"value="<?=$username ?>">
+                <input class="contact_input" type="text" placeholder="نام" name="user[name]" id="name" value="<?=$name ?>">
+                <input class="contact_input" type="text" placeholder="نام خانوادگی" name="user[lastname]" id="lastname"  value="<?=$lastname ?>" >
+                <input class="contact_input" type="text" placeholder="نام کاربری" name="user[user_name]"value="<?=$username ?>">
                 <span class="error">* <?php echo $usernameError;?></span>
-                <input class="contact_input" type="password" placeholder="رمز عبور" name="pass">
+                <input class="contact_input" type="password" placeholder="رمز عبور" name="user[pass]">
                 <span class="error">* <?php echo $passwordError;?></span>
-                <input class="contact_input" type="text" placeholder="شماره تماس" name="phone"value="<?=$phone ?>">
+                <input class="contact_input" type="text" placeholder="شماره تماس" name="user[phone]"value="<?=$phone ?>">
                 <span class="error">* <?php echo $phoneError;?></span>
-                <input class="contact_input" type="text" placeholder="ایمیل" name="email" value="<?=$email ?>">
+                <input class="contact_input" type="text" placeholder="ایمیل" name="user[email]" value="<?=$email ?>">
                 <span class="error">* <?php echo $emailError;?></span>
                 <input class="contact_input" type="file" placeholder="عکس" name="pic">
             </div>
