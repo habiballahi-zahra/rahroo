@@ -11,13 +11,13 @@
 <div class="course_title" id="courses_mode"><?php auth(); ?></div>
 <section class="teacher clearfix list">
 <article class="list-allcard">
-    <a href="manage_car.php?index=car">
+    <a href="manage.php?index=car">
     <div class="list-card">
         <img class="teacher-img clearfix" src="./images/car.png" alt="teacher-pic">
         <h4 class="teacher-name">مدیریت ماشین </h4>
     </div>
     </a>
-    <a href="manage_car.php?index=customer">
+    <a href="manage.php?index=customer">
     <div class="list-card">
         <img class="teacher-img" src="./images/user.png" alt="teacher-pic">
         <h4 class="teacher-name">مدیریت مشتری</h4>
