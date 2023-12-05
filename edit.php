@@ -1,12 +1,10 @@
 <?php
 $id = $_GET['id'];
 $table = $_GET['index'];
-echo $id;
 $connect = mysqli_connect("localhost", "root", "", "car_gallery");
 $sql = "select * from $table where ID=$id";
 $result = mysqli_query($connect, $sql);
 $row = mysqli_fetch_array($result);
-var_dump($row);
 if ($table == 'car') {
     $name = $row['name'];
     $atr = $row['color'];
