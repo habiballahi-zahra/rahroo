@@ -16,6 +16,7 @@
             <li><a class="menu_item" href="index.php">خانه</a></li>
             <li><a class="menu_item" href="#course">آموزش</a></li>
             <li><a class="menu_item" href="register.php">ثبت نام</a></li>
+            <li><a class="menu_item" href="login.php">ورود</a></li>
 
     </div>
     <!--    dark mode switch    -->

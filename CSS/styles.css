@@ -283,7 +283,7 @@ intrduction teacher start
     padding: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    /*border: solid 2px white;*/
+    /*border: solid 2px red;*/
     text-align: center;
 }
 
@@ -512,19 +512,22 @@ welcom page
 .list-card {
     direction: rtl;
     float: right;
-    width: 30%;
+    width: 25%;
     padding: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    margin-left: 6rem;
-    border: solid 2px white;
-    border-radius: var(--radius);
+    margin-left: 4rem;
+    /*border: solid 5px red;*/
+    border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
 
-    text-align: center;}
+}
+
+
 .list-allcard {
     float: left;
-    width: 70%;
+    width: 90%;
 }
 /*
 ////////////////////////////////////////////
